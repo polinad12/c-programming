@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    double array[10];
+    int array[10];
     for(int i = 0; i < 10; i++) {
-        scanf("%lf", &array[i]);
+        scanf("%d", &array[i]);
     }
     for(int i = 9; i >= 0; i--) {
-        printf("%.3f", array[i]);
+        printf("d", array[i]);
         if(i > 0) printf(" ");
     }
     printf("\n");
