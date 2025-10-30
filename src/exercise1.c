@@ -9,8 +9,8 @@ int main() {
         sum += arr[i];
     }
     
-    double average = sum / 100.0;
-    printf("%.2f\n", average);
+    double average = sum / 10.0;
+    printf("%.3f\n", average);
     
     return 0;
 }
