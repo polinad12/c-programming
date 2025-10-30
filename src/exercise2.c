@@ -9,6 +9,5 @@ int main() {
         if(i > 0) printf(" ");
     }
     printf("\n");
-    
     return 0;
 }
