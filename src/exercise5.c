@@ -6,17 +6,17 @@
 #define COLS_B 10
 
 int main() {
-    int A[ROWS_A][COLS_A];
-    int B[ROWS_B][COLS_B];
-    int result[ROWS_A][COLS_B] = {0};
+    double A[ROWS_A][COLS_A];
+    double B[ROWS_B][COLS_B];
+    double result[ROWS_A][COLS_B] = {0};
     for(int i = 0; i < ROWS_A; i++) {
         for(int j = 0; j < COLS_A; j++) {
-            scanf("%d", &A[i][j]);
+            scanf("%lf", &A[i][j]);
         }
     }
     for(int i = 0; i < ROWS_B; i++) {
         for(int j = 0; j < COLS_B; j++) {
-            scanf("%d", &B[i][j]);
+            scanf("%lf", &B[i][j]);
         }
     }
     for(int i = 0; i < ROWS_A; i++) {
@@ -28,7 +28,7 @@ int main() {
     }
     for(int i = 0; i < ROWS_A; i++) {
         for(int j = 0; j < COLS_B; j++) {
-            printf("%d", result[i][j]);
+            printf("%.3f", result[i][j]); 
             if(!(i == ROWS_A-1 && j == COLS_B-1)) printf(" ");
         }
     }
